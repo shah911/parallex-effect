@@ -2,6 +2,8 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
+import woman1 from "../../public/woman1.jpg";
+import woman2 from "../../public/woman2.jpg";
 
 function Gallery() {
   const ref = useRef(null);
@@ -36,10 +38,11 @@ function Gallery() {
       >
         <div className="relative h-full w-full">
           <Image
-            src="/woman1.jpg"
+            src={woman1}
             alt=""
             fill
             priority={true}
+            placeholder="blur"
             className="object-cover"
           />
         </div>
@@ -50,10 +53,11 @@ function Gallery() {
       >
         <div className="relative h-full w-full">
           <Image
-            src="/woman2.jpg"
+            src={woman2}
             alt=""
             fill
             priority={true}
+            placeholder="blur"
             className="object-cover"
           />
         </div>
