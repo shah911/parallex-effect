@@ -31,7 +31,9 @@ function Gallery() {
       ref={ref}
       className="relative min-h-[600px] h-screen flex items-center justify-center w-[95%] mx-auto overflow-hidden"
     >
-      <h1 className="text-5xl z-10 2xl:text-[4vw]">scroll</h1>
+      <h1 className="text-5xl z-10 2xl:text-[4vw] mix-blend-difference bg-white">
+        scroll
+      </h1>
       <motion.div
         style={{ clipPath: clipRight, top }}
         className="absolute w-[200px] 2xl:w-[15vw] h-[300px] 2xl:h-[50vh] right-0 top-[5%] overflow-hidden"
